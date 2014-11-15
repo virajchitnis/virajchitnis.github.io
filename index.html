@@ -21,29 +21,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300' rel='stylesheet' type='text/css'>
 	
 	<!-- Stylesheet -->
-	<style>
-	* {
-		margin: 0;
-		font-family: 'Ubuntu', 'HelveticaNeue-Thin', 'Helvetica Neue Thin', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
-		line-height: 1.5;
-		cursor: default;
-		-webkit-touch-callout: none;
-		-webkit-user-select: none;
-		-khtml-user-select: none;
-		-moz-user-select: none;
-		-ms-user-select: none;
-		user-select: none;
-	}
-	body {
-		max-width: 21cm;
-		margin: 0 auto !important;
-		float: none !important;
-	}
-	.footer {
-		text-align: center;
-		font-size: 8pt;
-	}
-	</style>
+	<link rel="stylesheet" href="css/stylesheet.css">
 </head>
 <body>
 	<h2 style="text-align: center; margin-top: 10%;">This website is under construction, please come back later</h2>
@@ -61,23 +39,6 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 	
 	<!-- Logic -->
-	<script>
-	$(document).ready(function() {
-		var documentHeight = $(document).height();
-		var windowHeight = $(window).height();
-		
-		if (documentHeight <= windowHeight) {
-			$("body").css("overflow", "hidden");
-			$(".footer").css({
-				"position": "fixed",
-				"bottom": 0,
-				"max-width": "21cm",
-				"margin": "0 auto !important",
-				"float": "none !important",
-				"width": "100%"
-			});
-		}
-	});
-	</script>
+	<script src="js/logic.js"></script>
 </body>
 </html>
